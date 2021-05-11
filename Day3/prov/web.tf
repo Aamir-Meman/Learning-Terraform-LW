@@ -3,7 +3,7 @@ region="us-east-1"
 profile="account1"
 }
 
-# Step 1 create the O.S.
+# Step 1 :- Create the O.S.
 resource "aws_instance" "webos1" {
 ami = "ami-0d5eff06f840b45e9"
 instance_type = "t2.micro"
@@ -30,7 +30,7 @@ provisioner "remote-exec" {
   }
 }
 
-# Create the EBS volume
+# Step 2:- Create the EBS volume
 resource "aws_ebs_volume" "storage1" {
   availability_zone = aws_instance.webos1.availability_zone 
   size              = 1
@@ -44,7 +44,8 @@ resource "aws_volume_attachment" "ebs_att" {
   instance_id = aws_instance.webos1.id
   force_detach = true
 }
-# Mount the EBS volume
+
+# Step 3:- Mount the EBS volume
 resource "null_resource" "nullremote2" {
 connection {
     type     = "ssh"
@@ -60,7 +61,7 @@ provisioner "remote-exec" {
   }
 }
 
-# Install git and clone the project to /web folder
+# Step 4:- Install git and clone the project to /web folder
 resource "null_resource" "nullremote3" {
 connection {
     type     = "ssh"
@@ -76,7 +77,7 @@ provisioner "remote-exec" {
   }
 }
 
-# Run the project in Chrome
+# Step 5:- Run the project in Chrome
 
 resource "null_resource"  "nullremote4" {
 provisioner "local-exec" {
