@@ -81,7 +81,7 @@ provisioner "remote-exec" {
 
 resource "null_resource"  "nullremote4" {
 provisioner "local-exec" {
-   command = "open http://google.com/ http://#<public_ip>#/web/index.html"
+   command = "open http://google.com/ http://<public_ip>/web/index.html"
   }
 
 }
