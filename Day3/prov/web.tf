@@ -77,11 +77,11 @@ provisioner "remote-exec" {
   }
 }
 
-# Step 5:- Run the project in Chrome
+# Step 5:- Run the project in Chrome with your instance public_ip address.
 
 resource "null_resource"  "nullremote4" {
 provisioner "local-exec" {
-   command = "open http://google.com/ http://18.215.154.165/web/index.html"
+   command = "open http://google.com/ http://#<public_ip>#/web/index.html"
   }
 
 }
