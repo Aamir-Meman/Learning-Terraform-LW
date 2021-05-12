@@ -72,7 +72,7 @@ connection {
 provisioner "remote-exec" {
     inline = [
       "sudo yum install git -y",
-      "sudo git clone https://github.com/Aamir-Meman/Php.git /var/www/html/web"
+      "sudo git clone https://github.com/Aamir-Meman/HTML.git /var/www/html/web"
     ]
   }
 }
