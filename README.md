@@ -14,13 +14,13 @@
   * 2. Internet Gateway
     * Name
   
-  * 3. Attach IGW and VPC :- Step  1 and Step 2
+  * 3. Attach IGW and VPC :- Step  a. and Step b.
 
   * 4. Subnet/labs :- 2
     * count = 2
     * Name: unique name : loop concept
   
   * 5. Routing table
-    * Internet : 0.0.0.0/0 go to igw : step 2
+    * Internet : 0.0.0.0/0 go to igw : step b
 
-  * 6. Attach the RT step5 to Subnet step4
+  * 6. Attach the RT step e to Subnet step d
