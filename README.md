@@ -24,3 +24,7 @@
     * Internet : 0.0.0.0/0 go to igw : step b
 
   * 6. Attach the RT step e to Subnet step d
+
+## Day 8
+
+* [`aws vpc` module](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest)
