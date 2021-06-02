@@ -28,3 +28,9 @@
 ## Day 8
 
 * [`aws vpc` module](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest)
+
+## Day 9
+
+* [`lookup` function](https://www.terraform.io/docs/language/functions/lookup.html)
+* [`k8s` configuration](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs)
+* [`security group` dynamic block method](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group)
