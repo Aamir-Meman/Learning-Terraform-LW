@@ -34,3 +34,17 @@
 * [`lookup` function](https://www.terraform.io/docs/language/functions/lookup.html)
 * [`k8s` configuration](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs)
 * [`security group` dynamic block method](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group)
+
+## Day 11
+
+* [`regex` function](https://www.terraform.io/docs/language/functions/regex.html)
+* [`replace` function](https://www.terraform.io/docs/language/functions/replace.html)
+* [`nested` module calling](https://stackoverflow.com/questions/54324265/terraform-nested-module-calling-and-outputs)
+* [`datasource` used in terraform - stackoverflow](https://stackoverflow.com/questions/47721602/how-are-data-sources-used-in-terraform)
+* [`datasource` from documentation](https://www.terraform.io/docs/language/data-sources/index.html)
+
+
+`terraform workspace list`
+`terraform workspace new dev`
+`terraform workspace new prod`
+`terraform workspace select prod`
