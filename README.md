@@ -44,7 +44,7 @@
 * [`datasource` from documentation](https://www.terraform.io/docs/language/data-sources/index.html)
 
 
-`terraform workspace list`
-`terraform workspace new dev`
-`terraform workspace new prod`
-`terraform workspace select prod`
+* $ `terraform workspace list`
+* $ `terraform workspace new dev`
+* $ `terraform workspace new prod`
+* $ `terraform workspace select prod`
