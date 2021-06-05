@@ -1,6 +1,6 @@
 provider "aws" {
 region="us-east-1"
-profile="account1"
+profile="account3"
 }
 
 # Step 1 :- Create the O.S.
@@ -81,7 +81,7 @@ provisioner "remote-exec" {
 
 resource "null_resource"  "nullremote4" {
 provisioner "local-exec" {
-   command = "open http://google.com/ http://<public_ip>/web/index.html"
+   command = "open http://google.com/ http://${aws_instance.webos1.public_ip}/web/index.html"
   }
 
 }
