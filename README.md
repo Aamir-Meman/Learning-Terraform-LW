@@ -52,3 +52,4 @@
 * $ `terraform workspace new prod`
 * $ `terraform workspace select prod`
 
+# This concludes training so total classes are 11.
