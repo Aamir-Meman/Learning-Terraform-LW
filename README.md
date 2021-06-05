@@ -47,7 +47,15 @@
 * [`datasource` used in terraform - stackoverflow](https://stackoverflow.com/questions/47721602/how-are-data-sources-used-in-terraform)
 * [`datasource` from documentation](https://www.terraform.io/docs/language/data-sources/index.html)
 
+<<<<<<< HEAD
 `terraform workspace list`
 `terraform workspace new dev`
 `terraform workspace new prod`
 `terraform workspace select prod`
+=======
+
+* $ `terraform workspace list`
+* $ `terraform workspace new dev`
+* $ `terraform workspace new prod`
+* $ `terraform workspace select prod`
+>>>>>>> a4e6409530f0b07db707515dc77f0ff5e81125e5
